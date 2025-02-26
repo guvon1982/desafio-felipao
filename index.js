@@ -1,5 +1,3 @@
-console.log("Hello, world!");
-
 const prompt = require("prompt-sync")();
 
 // DESAFIO 1 - Desafio Classificador de nível de Herói
