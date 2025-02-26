@@ -2,17 +2,17 @@ const prompt = require("prompt-sync")();
 
 // DESAFIO 1 - Desafio Classificador de nível de Herói
 
-let nome = "";
+let nome = " ";
 let xp = 0;
 let nivel = "";
-let continuar = "sim"; // Inicializa com "sim" para entrar no loop
+let continuar = "sim";
 
-while (continuar.toLowerCase() === "sim") {
-  // Solicita os dados do herói
+//Eu quero um comando de while para que o usuário digite sim se quiser continuar ou não se quiser parar.
+while (continuar === "sim") {
   nome = prompt("Qual o nome do herói? ");
-  xp = Number(prompt("Qual a experiência do herói? "));
+  console.log();
+  xp = Number(prompt("Qual a experiencia do herói? "));
 
-  // Classifica o nível do herói
   if (xp <= 1000) {
     nivel = "Ferro";
   } else if (xp > 1000 && xp <= 2000) {
@@ -31,11 +31,12 @@ while (continuar.toLowerCase() === "sim") {
     nivel = "Radiante";
   }
 
-  // Exibe o resultado
+  console.log();
   console.log("O herói de nome " + nome + " está no nível de " + nivel);
 
-  // Pergunta se o usuário deseja continuar
+  console.log();
   continuar = prompt("Deseja continuar? (sim / não): ");
+  console.log();
 }
-
-console.log("Obrigado pela participação!");
+console.log();
+console.log("Obrigado pela participação");
